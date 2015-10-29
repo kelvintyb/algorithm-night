@@ -11,7 +11,15 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.2.1"
   s.executables           = ['propositum']
   s.require_paths         = %w[lib]
-  s.files                 = ["lib/propositum.rb", "lib/propositum/stack.rb", "lib/propositum/queue.rb", "bin/propositum"]
+  s.files                 = [
+    "lib/propositum.rb",
+    "lib/propositum/stack.rb",
+    "lib/propositum/queue.rb",
+    "lib/propositum/linkedlist.rb",
+    "lib/propositum/node.rb",
+    "lib/propositum/algorithms.rb",
+    "bin/propositum"
+  ]
   s.homepage              = "http://www.github.com/johnakers/propositum"
   s.license               = "MIT"
 end
