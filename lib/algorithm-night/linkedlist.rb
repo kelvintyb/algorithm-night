@@ -1,3 +1,11 @@
+class LLNode
+  attr_accessor :next, :value
+  def initialize(value)
+    @value = value
+    @next  = nil
+  end
+end
+
 class LinkedList
   
   def initialize
@@ -6,13 +14,13 @@ class LinkedList
 
   def add(value)
     if @head.nil?
-      @head = Node.new(value)
+      @head = LLNode.new(value)
     else
       current = @head
       while not current.next.nil?
         current = current.next
       end
-      current.next = Node.new(value)
+      current.next = LLNode.new(value)
     end
   end
 
